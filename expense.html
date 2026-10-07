@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense-Expense tracker</title>
+    <link rel="stylesheet" href="expense.css">
+</head>
+<body style="background-color:white;">
+    <div class="topbar">
+        <a href="home.html">Home</a>
+        <a href="balance.html">Balance</a>
+        <a href="savings.html">Savings</a>
+    </div>
+    <h1 >Expense</h1>
+    <form  id="expense-form">
+    <fieldset>
+        <legend>Expenditure details</legend>
+        <label for="category">Select expenditure category:</label>
+        <select id="category" name="category">
+            <option value="travel">Metro</option>
+            <option value="food">Food</option>
+            <option value="stationary">Stationary</option>
+            <option value="Others">Others</option>    
+        </select>
+        <br><br>
+        
+        <label for="amount">Enter amount:</label>
+        <input type="number" name="amount" id="amount" placeholder="₹">
+        <br><br>
+        
+        <label for="expense_date">Select date:</label>
+        <input type="date" name="date" id="expense_date"><br><br>
+        
+        <label for="notes">Note:</label>
+        <textarea id="notes" name="notes" rows="1" cols="30" placeholder="Optional note">
+        </textarea><br><br>
+        <button type="submit" id="add">Add</button>
+    </fieldset> 
+    <br><br>
+    <!--------When clicked the add button there should be a popup that says expenditure added-->
+   </form> 
+   <h2>Expense List</h2>
+   <ul id="expense-list">
+   </ul>
+<h3>Total Expenditure: ₹<span id="total">0</span></h3> 
+</body>
+</html>
