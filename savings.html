@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings-Expense Tracker</title>
+    <link rel="stylesheet" href="savings.css">
+</head>
+<body style="background-color:white;">
+    <div class="topbar">
+        <a href="home.html">Home</a>
+        <a href="expense.html">Expense</a>
+        <a href="balance.html">Balance</a>
+    </div>
+    <h1>Savings</h1>
+    <form id="savings_form">
+        <fieldset>
+            <legend>Savings details</legend>
+                 <label for="savings_date">Select date:</label>
+                <input type="date" id="savings_date" name="date"><br><br>
+
+                <label for="savings_amount">Enter Amount:</label>
+                 <input type="number" name="amount" id="savings_amount" placeholder="₹"><br><br>
+
+                 <button type="submit" id="add_savings">Add</button>
+        </fieldset>
+    </form><br><br><br>
+        <h2>Total Savings:₹<span id="total_savings">0</span></h2>
+
+    
+</body>
+</html>
