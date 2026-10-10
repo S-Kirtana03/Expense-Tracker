@@ -52,6 +52,10 @@ expense-tracker/
 ├── balance.js
 └── README.md
 
+## Live Demo
+
+- Netlify: kirtana-expense-tracker.netlify.app
+
 ## Note
 
 This is a personal project. Data is stored only in the browser using localStorage.  
